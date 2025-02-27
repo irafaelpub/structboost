@@ -13,6 +13,10 @@ header .container {
   justify-content: space-between;
 }
 
+header .btn-mobile {
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -294,8 +298,17 @@ footer .copy strong {
   header nav {
     display: none;
   }
+  header .btn-mobile {
+    display: block;
+  }
 }
 
 /* mobile */
 @media (max-width: 560px) {
+  header nav {
+    height: 7.2rem;
+  }
+  header .logo {
+    max-width: 16rem;
+  }
 }
