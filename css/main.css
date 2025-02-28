@@ -45,12 +45,9 @@ header nav ul li a:hover {
   position: relative;
   max-width: 100%;
   padding-top: 11.3rem;
-  height: 106.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  display: none;
 }
 
 .s-hero::after {
@@ -107,14 +104,15 @@ header nav ul li a:hover {
 }
 
 .ilustra {
-  display: none;
-
   padding: 0 1.5rem;
+}
+
+.s-hero .ilustra-mobile {
+  display: none;
 }
 
 .s-digital {
   display: none;
-
   padding-top: 12.8rem;
 }
 
@@ -292,6 +290,9 @@ footer .copy strong {
 
 /* tablet */
 @media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -300,6 +301,26 @@ footer .copy strong {
   }
   header .btn-mobile {
     display: block;
+  }
+  .s-hero::after {
+    max-width: 49rem;
+    margin: 0 auto;
+    font-size: 5rem;
+    padding-top: 6rem;
+  }
+  .s-hero .text h1::before {
+    background-size: 100%;
+    left: 0;
+    bottom: -0.4rem;
+  }
+
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+  .s-hero .arrow {
+    left: 2rem;
+    bottom: 3.7rem;
+    max-width: 6rem;
   }
 }
 
@@ -310,5 +331,34 @@ footer .copy strong {
   }
   header .logo {
     max-width: 16rem;
+  }
+
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+
+  .s-hero .text p {
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .s-hero .arrow {
+    display: none;
+  }
+
+  .s-hero .ilustra {
+    display: none;
+  }
+
+  .s-hero .ilustra-mobile {
+    display: block;
+  }
+
+  .s-hero::after {
+    height: 22rem;
   }
 }
