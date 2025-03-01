@@ -112,7 +112,6 @@ header nav ul li a:hover {
 }
 
 .s-digital {
-  display: none;
   padding-top: 12.8rem;
 }
 
@@ -286,12 +285,32 @@ footer .copy strong {
 
 /* monitor pequeno */
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-top: 6.8rem;
+  }
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 6.8rem;
+  }
 }
 
 /* tablet */
 @media (max-width: 991px) {
   .s-hero::after {
     height: 13rem;
+  }
+
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-digital .info h6 {
+    font-size: 2rem;
+  }
+
+  .s-digital .info p {
+    font-size: 1.6rem;
   }
 }
 
@@ -360,5 +379,19 @@ footer .copy strong {
 
   .s-hero::after {
     height: 22rem;
+  }
+
+  .s-digital {
+    padding-top: 8rem;
+  }
+
+  .s-digital ul {
+    padding-bottom: 8rem;
+    gap: 64px;
+  }
+
+  .s-digital h3 {
+    font-size: 2.8rem;
+    max-width: 31rem;
   }
 }
